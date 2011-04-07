@@ -4,8 +4,39 @@
 	<groupId>com.chronimo</groupId>
 	<artifactId>bookmarks-manager</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
-	<name>firefox-delicous</name>
+	<name>bookmarks-manager</name>
 	<description>Converts a delicious bookmarks export to firefox bookmarks json.</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.2.1</version>
+				<configuration>
+					<finalName>${project.artifactId}</finalName>
+					<appendAssemblyId>false</appendAssemblyId>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<archive>
+						<manifest>
+							<mainClass>com.chronimo.bookmarks.Delicious2Firefox</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>commons-io</groupId>
