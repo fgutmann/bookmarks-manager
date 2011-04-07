@@ -20,16 +20,16 @@ h3. Export Firefox Bookmarks (do it even if you currently have none)
 
 h3. Download and run delicious2firefox.jar
 
-* Download the jar file from here: https://github.com/downloads/fgutmann/bookmarks-manager/delicious2firefox.jar
+* Download the jar file from here: "delicious2firefox.jar":https://github.com/downloads/fgutmann/bookmarks-manager/delicious2firefox.jar
 * Save it to the same place as the bookmark files
 * Open a command promt
 ** For windows users: Start -> run -> enter "cmd" -> press enter
 * Navigate to the folder you saved the files
-** For windows users: Enter "cd <path to folders>" into the command promt and hit return
+** For windows users: Enter "cd [path to folder]" into the command promt and hit return
 Example: "cd C:\Dokumente und Einstellungen\Besitzer\Eigene Dateien\Downloads"
 * Run delicious2firefox.jar
-** Enter "java -jar <delicious bookmarks filename> <firefox bookmarks filename> <some new name>"
-** Example: "java -jar delicious-20110407.htm bookmarks-2011-04-07.json new.json"
+** Enter "java -jar [delicious bookmarks filename] [firefox bookmarks filename] [some new name]"
+Example: "java -jar delicious-20110407.htm bookmarks-2011-04-07.json new.json"
 
 h3. Import the New File into Firefox
 
