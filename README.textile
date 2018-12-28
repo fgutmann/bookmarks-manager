@@ -38,4 +38,4 @@ h3. Import the New File into Firefox
 * Choose the newly created file
 
 Voila, you are finished!
-All you're delicious bookmarks are imported to firefox including all tags.
+All your delicious bookmarks are imported to firefox including all tags.
